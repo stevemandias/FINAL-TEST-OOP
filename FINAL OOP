@@ -1,0 +1,166 @@
+#include <iostream>
+#define BUNGA 0.01
+
+using namespace std;
+int main()
+{
+
+    const char nama[]="NAMA : Steve Mandias";
+          char npm[]="NPM : ";
+          char kelas[]="Ilmu Komputer SI";
+
+          int kode,kode2,setor,saldo;
+          char;
+          string pass;
+          int tarik[2]=(200000,500000);
+
+cout << "\BIODATA"<<endl;
+cout << "++++++++++++++++"<<endl;
+cout << "nama<<endl;
+cout << "npm<<endl;
+cout << "kelas<<endl;
+cout <<endl;
+
+do{
+
+    cout << "\t\t\t\tLOGIN";
+    cout <<endl;
+    cout <<endl;
+    cout <<endl;
+    cout << "Masukan Kata Sandi :";
+    cin >>pass;
+    system("cls");
+
+    while(pass=="123456")
+    {
+
+        if(lagi=='T' || lagi=='t')
+        goto keluar;
+
+
+cout<<"         ATM BANK "<<endl;
+cout<<"=========================== "<<endl;
+cout<<""<<endl;
+cout<<"----------------------------"<<endl;
+cout<<"          MENU "<<endl;
+cout<<" "<<endl;
+cout<<"1. Cek Saldo            3. Setoran Tunai"<<endl;
+cout<<endl;
+cout<<"2. Penarikan Tunai      4. Exit"<<endl;
+cout<<"----------------------------"<<endl;
+cout<<endl;
+cout<<"MASUKAN PILIHAN ANDA : ";
+cin>>kode;
+system("cls");
+
+switch(kode)
+{
+
+    case 1:
+    cout<<endl;
+    cout<<" ______________________"<<endl;
+    cout<<"|   Informasi Saldo    |"<<endl;
+    cout<<"|______________________|"<<endl;
+    cout<<"|"endl;
+    cout<<"| Sisa Saldo" Rp. "<<saldo<<endl;
+    cout<<"|______________________|"<<endl;
+    cout<<"APAKAH INGIN MELAKUKAN TRANSAKSI LAGI Y/T ; ";
+    cin>>lagi;
+    system("cls");
+    break;
+
+    case 2:
+    cout<<"         ATM BANK "<<endl;
+    cout<<"=========================== "<<endl;
+    cout<<""<<endl;
+    cout<<"----------------------------"<<endl;
+    cout<<"      PENARIKA TUNAI "<<endl;
+    cout<<" "<<endl;
+    cout<<"1. Rp.500.000        2. Rp. 1.000.000"<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"MASUKAN PILIHAN ANDA : ";
+    cin>>kode;
+    system("cls");
+
+    switch(kode2)
+    {
+
+        case 1:
+        cout<<"\t\tPenarikan Berhasil";
+        cout<<endl;
+        cout<<endl;
+        cout<<endl;
+        cout<<"Anda melakukan penarikan tunai senilai : Rp.200.000,-"<<endl;
+        saldo=      melakukan penarikan tunai senilai : Rp.200.000,-"<<endl;
+        saldo=saldo-tarik[0];
+        cout<<""<<endl;
+        cout<<"Sisa Saldo  :  Rp."<<saldo<<",-";
+        cout<<""<<endl;
+        cout<<""<<endl;
+        cout<<"APAKAH INGIN MELAKUKAN TRANSAKSI LAGI Y/T ; ";
+        cin>>lagi;
+        system("cls");
+        break;
+
+        case 2:
+        cout<<"\t\tPenarikan Berhasil";
+        cout<<endl;
+        cout<<endl;
+        cout<<endl;
+        cout<<"Anda melakukan penarikan tunai senilai : Rp.500.000,-"<<endl;
+        saldo=saldo-tarik[1];
+        cout<<""<<endl;
+        cout<<"Sisa Saldo  :  Rp."<<saldo<<",-";
+        cout<<"Sisa Saldo  :  Rp."<<saldo<<",-";
+        cout<<""<<endl;
+        cout<<""<<endl;
+        cout<<"APAKAH INGIN MELAKUKAN TRANSAKSI LAGI Y/T ; ";
+        cin>>lagi;
+        system("cls");
+
+    }
+break;
+
+case 3:
+cout<<"Setoran Tunai"<<endl;
+cout<<endl;
+cout<<endl;
+cout<<endl;
+cout<<"Masukan Jumlah yang ingin anda setorkan : "; cin>>setor;
+saldo=setor*BUNGA+setor+saldo;
+cout<<endl;
+cout<<"Jumlah Saldo Anda Sekarang : "<<saldo<<endl;
+cout<<"APAKAH INGIN MELAKUKAN TRANSAKSI LAGI Y/T ; ";
+cin>>lagi;
+system("cls");
+break;
+
+case 4:
+goto keluar;
+break;
+default:
+cout<<"KODE YANG ANDA MASUKAN TIDAK TERSEDIA";
+system("cls");
+
+
+}
+    }
+    
+    cout<<"Kata Sandi Yang Anda Masukan Salah!"<<endl;
+    cout<<endl;
+    cout<<"Silahkan Coba Lagi Y/T ;";
+    cin>>lagi;
+    cout<<endl;
+    system("cls");
+
+}
+
+while(lagi=='Y' || lagi=='y');
+keluar;
+cout<<"TERIMA KASIH TELAH MELAKUKAN TRANSAKSI";
+cout<<endl;
+
+return 0;
+}
